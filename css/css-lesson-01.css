@@ -1,0 +1,55 @@
+/*stylesheet*/
+
+/*
+
+tiers of cascading styles
+
+Importance 
+1- transition
+2- !important
+3- animation
+4- normal
+
+Origin
+1- website
+2- user
+3- browser
+
+Specificity
+1- Inline
+2- Id
+3- Class
+4- Type
+
+Position
+Closer to the bottom wins
+
+*/
+
+
+	body {
+		background-color: #e6e6e6;
+		color: #333333;
+	}
+
+	h1#main-headline {
+		font-size: 48px;
+		color: green;
+		font-weight: 800;
+	}
+
+	h1.main-headline {
+		font-size: 48px;
+		color: red;
+		font-weight: 800;
+	}
+
+	h1, h2, h3, h4 {
+		margin: 0;
+	}
+
+	p {
+		color: purple !important;
+	}
+
+

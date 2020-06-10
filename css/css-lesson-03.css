@@ -1,0 +1,84 @@
+/*stylesheet*/
+
+
+body {
+	background-color: #fff;
+	color: #000;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	background: url('../images/tile.jpg');
+	background-repeat: repeat;
+}
+
+#wrapper {
+	margin: 2em auto;
+	max-width: 960px;
+	padding: 0 20px;
+}
+
+.article {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	background-color: #fff;
+	padding: 60px 0 20px 0;
+}
+
+.article div {
+	background-color: rgba(0,0,0,0.1)
+}
+
+.box {
+	float: right;
+	width: 230px;
+	border: solid black 3px;
+	padding: 10px;
+	margin: 20px;
+}
+
+.masthead {
+	width: 840px;
+	border: solid black 3px;
+	padding: 10px;
+	margin: 20px;
+}
+
+.half, .second-half {
+	/* width: 50%; */
+	width: calc(50% - 40px);
+	padding: 20px;
+}
+
+.half {
+	float: left;
+}
+
+.second-half {
+	float: right;
+}
+
+.em-size-box {
+	width: 2em;
+	height: 2em;
+	background-color: orange !important;
+}
+
+.rem-size-box {
+	width: 2rem;
+	height: 2rem;
+	background-color: red !important;
+}
+
+.new-font-size {
+	font-size: 64px;
+}
+
+.vw-vh-demo {
+	background-color: purple;
+	width: 100vw;
+	height: 100vh;
+}
+
+
+
+

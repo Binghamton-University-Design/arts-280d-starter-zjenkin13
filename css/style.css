@@ -1,8 +1,14 @@
+/* vars */
+:root {
+	--background-color: #fff; /*white*/
+	--body-color: #333333; /*charcoal*/
+}
 
 body {
-	background-color: #ffffff;
-	color: #333333;
+	background-color: var(--background-color);
+	color: var(--body-color);
 	font-family: 'Poppins', sans-serif;
+	line-height: 1.5;
 }
 
 /*GENERAL*/
@@ -51,7 +57,7 @@ ul {
 }
 
 #logo a {
-	color: #000;
+	color: var(--body-color);
 	text-decoration: none;
 	display: flex;
 	width: 100%;
@@ -200,7 +206,8 @@ ul {
 	background: #f6f6f6;
 }
 
-#work h3 {
+#work h3, #writing h3 {
+	letter-spacing: 1px;
 	margin-bottom: 2rem;
 }
 
@@ -247,6 +254,34 @@ ul {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.writing-item .date-holder {
+	margin-bottom: .25em;
+}
+
+.writing-item .date {
+	margin: 0;
+	font-size: .85rem;
+	padding: 0 4px;
+	color: #fff;
+	display: inline-block;
+	background-color: var(--body-color);
+}
+
+.writing-item h2 a {
+	color: var(--body-color);
+	text-decoration-color: transparent;
+	transition: text-decoration-color .3s ease-in-out;
+}
+
+.writing-item h2 a:hover {
+	color: var(--body-color);
+	text-decoration-color: var(--body-color);
+}
+
+.writing-item {
+	background: #f6f6f6;
 }
 
 /*FOOTER*/

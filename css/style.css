@@ -376,44 +376,53 @@ ul {
 /*RESPONSIVE*/
 
 /* for variable type sizing */
-@media screen and (min-width: 320px) {
-	body {
-		font-size: calc(12px * 4 * ((100vw - 320px) / 960));
+@media screen and (min-width: 320px){
+	body{
+		font-size:calc(12px + 4 * ((100vw - 320px)/960));
 	}
 }
 
-@media all and (max-width: 699px) {
-	#nav-button {
-		display: block;
+/*for mobile*/
+@media all and (max-width:699px) {
+	
+	#nav-button{
+		display:block;
 	}
-	#nav {
-		border-bottom: 1px solid #000;
-		display: none;
+	#nav{
+		border-bottom:1px solid var(--body-color);
+		display:none;
 	}
-	#nav li {
-		width: 100%;
-		flex-basis: 100%;
-		margin-bottom: 1rem;
+	#nav li{
+		width:100%;
+		flex-basis:100%;
+		margin-bottom:1rem;
 	}
-	#intro-holder h1 {
-		font-size: 3.2rem;
+	#intro-holder h1{
+		font-size:3.2rem;
 	}
 
-	.work-item .inner .work-inside {
-		opacity: 1;
+	.work-item .inner .work-inside{
+		opacity:1;
+	}
+
+}
+
+/*for desktop*/
+@media all and (min-width:700px){
+	#intro{
+		height:70vh;
+	}
+
+	#intro-holder{
+		width:100%;
+		padding:2em;
+		text-align: center;
 	}
 }
 
-@media all and (min-width: 700px) {
-	#intro {
-		height: 70vh;
+@media screen and (min-width:1220px){
+	body{
+		font-size:18px;
 	}
-	#intro-holder {
-		padding: 0 5em;
-	}
-}
-
-body {
-	font-size: 18px;
 }
 
